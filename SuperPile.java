@@ -68,6 +68,15 @@ public class SuperPile extends Stack<Integer>
 		{
 		return size();
 		}
+
+	/*------------------------------------------------------------------*\
+	|*							Methodes Private						*|
+	\*------------------------------------------------------------------*/
+
+	private void notifyElement()
+		{
+		System.out.println("La pile est vide");
+		}
 		
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
