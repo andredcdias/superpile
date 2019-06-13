@@ -24,11 +24,16 @@ public class SuperPile extends Stack<Integer>
 
 	public synchronized static SuperPile getInstance() // SIngleton
 		{
-		if (instance == null)
+		if (instancePile == null)
 			{
-			instance = new SuperPile();
+			instancePile = new SuperPile();
 			}
 		return instance;
+		}
+		
+	public void Empiler(int case)
+		{
+		push(case);
 		}
 		
 	/*------------------------------------------------------------------*\
@@ -36,5 +41,5 @@ public class SuperPile extends Stack<Integer>
 	\*------------------------------------------------------------------*/
 
 	//TOOLS
-	private static SuperPile instance;
+	private static SuperPile instancePile;
 	}
