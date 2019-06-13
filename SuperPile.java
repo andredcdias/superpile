@@ -26,9 +26,15 @@ public class SuperPile extends Stack<Integer>
 		{
 		if (instance == null)
 			{
-			System.out.println("J'existe");
 			instance = new SuperPile();
 			}
 		return instance;
 		}
+		
+	/*------------------------------------------------------------------*\
+	|*							Attributs Private						*|
+	\*------------------------------------------------------------------*/
+
+	//TOOLS
+	private static SuperPile instance;
 	}
