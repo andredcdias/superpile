@@ -38,9 +38,9 @@ public class SuperPile extends Stack<Integer>
 		
 	public int depiler() //Observable
 		{
-		if (taille() == 0)
+		if (getTaille() == 0)
 			{
-			notifyElement();
+			notifierElement();
 			}
 		return pop();
 		}
@@ -73,7 +73,7 @@ public class SuperPile extends Stack<Integer>
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
 
-	private void notifyElement()
+	private void notifierElement()
 		{
 		System.out.println("La pile est vide");
 		}
