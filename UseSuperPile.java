@@ -21,12 +21,19 @@ public class UseSuperPile
 		afficherTaille();
 		
 		depilerAfficher();
+		
+		sommetAfficher();
 		}
 
 	/*------------------------------------------------------------------*\
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
-	
+
+	private static void sommetAfficher()
+		{
+		System.out.println("Element du sommet non retiré : " + SuperPile.getInstance().sommet());
+		}
+		
 	private static void depilerAfficher()
 		{
 		System.out.println("Element du sommet et retiré : " + SuperPile.getInstance().depiler());
