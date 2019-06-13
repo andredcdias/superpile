@@ -22,7 +22,7 @@ public class SuperPile extends Stack<Integer>
 	|*							Methodes Public							*|
 	\*------------------------------------------------------------------*/
 
-	public synchronized static SuperPile getInstance() // SIngleton
+	public synchronized static SuperPile getInstance() // Singleton
 		{
 		if (instancePile == null)
 			{
@@ -31,9 +31,18 @@ public class SuperPile extends Stack<Integer>
 		return instance;
 		}
 		
-	public void Empiler(int case)
+	public void empiler(int case)
 		{
 		push(case);
+		}
+		
+	public int depiler()
+		{
+		if (taille() == 0)
+			{
+			notifyElement();
+			}
+		return pop();
 		}
 		
 	/*------------------------------------------------------------------*\
