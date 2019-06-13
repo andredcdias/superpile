@@ -27,8 +27,8 @@ public class SuperPile extends Stack<Integer>
 		{
 		if (instanceSuperPile == null)
 			{
-			System.out.println("SuperPile créée");
 			instanceSuperPile = new SuperPile();
+			System.out.println("SuperPile créée");
 			}
 		return instanceSuperPile;
 		}
