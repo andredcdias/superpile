@@ -23,12 +23,29 @@ public class UseSuperPile
 		depilerAfficher();
 		
 		sommetAfficher();
+		
+		sousSommetAfficher();
+
+		viderPile(5);
 		}
 
 	/*------------------------------------------------------------------*\
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
 
+	private static void viderPile(int case)
+		{
+		for(int i = 0; i < case; i++)
+			{
+			SuperPile.getInstance().depiler();
+			}
+		}
+
+	private static void sousSommetAfficher()
+		{
+		System.out.println("Element une case en dessous du sommet : " + SuperPile.getInstance().sousSommet());
+		}
+		
 	private static void sommetAfficher()
 		{
 		System.out.println("Element du sommet non retiré : " + SuperPile.getInstance().sommet());
@@ -44,9 +61,9 @@ public class UseSuperPile
 		System.out.println("Taille de la pile : " + SuperPile.getInstance().getTaille());
 		}
 
-	private static void empiler(int valeur)
+	private static void empiler(int case)
 		{
-		for(int i = 0; i < valeur; i++)
+		for(int i = 0; i < case; i++)
 			{
 			SuperPile.getInstance().empiler(i);
 			}

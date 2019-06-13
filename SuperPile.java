@@ -32,9 +32,9 @@ public class SuperPile extends Stack<Integer>
 		return instance;
 		}
 		
-	public void empiler(int case)
+	public void empiler(int valeur)
 		{
-		push(case);
+		push(valeur);
 		}
 		
 	public int depiler() //Observable
