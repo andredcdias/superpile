@@ -51,6 +51,16 @@ public class SuperPile extends Stack<Integer>
 		push(premier);
 		return premier;
 		}
+		
+	public int sousSommet() // FACADE
+		{
+		int premier = pop();
+		int deuxieme = pop();
+		push(deuxieme);
+		push(premier);
+		return deuxieme;
+		}
+	
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
