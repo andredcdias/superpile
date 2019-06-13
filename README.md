@@ -11,6 +11,6 @@
 # l'avant derniere valeur (sous sommet).
 #
 # Attention : Programme qui ne compile pas. Problème avec la fonction pop()
-# qui est censée retourner la dernière valeur 
+# qui est censée retourner la dernière valeur. NE COMPILE PAS...
 
 
