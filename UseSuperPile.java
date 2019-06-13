@@ -16,12 +16,19 @@ public class UseSuperPile
 
 	public static void main()
 		{
-		Empiler(4);
+		Empiler(5);
+		
+		AfficherTaille();
 		}
 
 	/*------------------------------------------------------------------*\
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
+	
+	private static void AfficherTaille()
+		{
+		System.out.println("Taille de la pile : " + SuperPile.getInstance().getTaille());
+		}
 
 	private static void Empiler(int valeur)
 		{
