@@ -10,7 +10,8 @@
 # d'afficher la dernière valeur ajoutée à la pile (sommet) ainsi que la 
 # l'avant derniere valeur (sous sommet).
 #
-# Attention : Programme qui ne compile pas. Problème avec la fonction pop()
-# qui est censée retourner la dernière valeur. NE COMPILE PAS...
+# Attention : Programme qui ne compile pas. Semble y avoir un problème 
+# avec la fonction pop() qui est censée retourner la dernière valeur. 
+# ==> Compile mais bizarrement : A tester par vous même...
 
 
