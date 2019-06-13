@@ -36,7 +36,7 @@ public class SuperPile extends Stack<Integer>
 		push(case);
 		}
 		
-	public int depiler()
+	public int depiler() //Observable
 		{
 		if (taille() == 0)
 			{
@@ -44,7 +44,13 @@ public class SuperPile extends Stack<Integer>
 			}
 		return pop();
 		}
-		
+
+	public int sommet() // Facade
+		{
+		int premier = pop();
+		push(premier);
+		return premier;
+		}
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
