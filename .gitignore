@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.metadata/
+
+# ignore les extentions non désirées pour la commande git add -A (track all)
+.dat
+.exe
+.o
+.gitignore
+.recommenders

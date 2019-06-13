@@ -1,8 +1,9 @@
 /**
  * SuperPile.java
- * @author : Andr√© Da Costa Dias
+ * @author andrehen.dacostad
  */
 
+package ch.hearc.cours.gitsuperpile;
 
 import java.util.Stack;
 
@@ -24,19 +25,19 @@ public class SuperPile extends Stack<Integer>
 
 	public synchronized static SuperPile getInstance() // Singleton
 		{
-		if (instancePile == null)
+		if (instanceSuperPile == null)
 			{
-			System.out.println("SuperPile cr√©e");
-			instancePile = new SuperPile();
+			System.out.println("SuperPile crÈÈe");
+			instanceSuperPile = new SuperPile();
 			}
-		return instance;
+		return instanceSuperPile;
 		}
-		
+
 	public void empiler(int valeur)
 		{
 		push(valeur);
 		}
-		
+
 	public int depiler() //Observable
 		{
 		if (getTaille() == 0)
@@ -52,7 +53,7 @@ public class SuperPile extends Stack<Integer>
 		push(premier);
 		return premier;
 		}
-		
+
 	public int sousSommet() // FACADE
 		{
 		int premier = pop();
@@ -64,7 +65,7 @@ public class SuperPile extends Stack<Integer>
 	/*------------------------------------------------------------------*\
 	|*							  Get           						*|
 	\*------------------------------------------------------------------*/
-	
+
 	public int getTaille()
 		{
 		return size();
@@ -78,11 +79,11 @@ public class SuperPile extends Stack<Integer>
 		{
 		System.out.println("La pile est vide");
 		}
-		
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 
 	//TOOLS
-	private static SuperPile instancePile;
+	private static SuperPile instanceSuperPile;
 	}

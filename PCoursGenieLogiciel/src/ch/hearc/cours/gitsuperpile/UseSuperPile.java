@@ -1,7 +1,9 @@
 /**
  * UseSuperPile.java
- * @author : Andr√© Da Costa Dias
+ * @author andrehen.dacostad
  */
+
+package ch.hearc.cours.gitsuperpile;
 
 public class UseSuperPile
 	{
@@ -17,13 +19,13 @@ public class UseSuperPile
 	public static void main()
 		{
 		empiler(5);
-		
+
 		afficherTaille();
-		
+
 		depilerAfficher();
-		
+
 		sommetAfficher();
-		
+
 		sousSommetAfficher();
 
 		viderPile(5);
@@ -33,9 +35,9 @@ public class UseSuperPile
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
 
-	private static void viderPile(int case)
+	private static void viderPile(int n)
 		{
-		for(int i = 0; i < case; i++)
+		for(int i = 0; i < n; i++)
 			{
 			SuperPile.getInstance().depiler();
 			}
@@ -45,25 +47,25 @@ public class UseSuperPile
 		{
 		System.out.println("Element une case en dessous du sommet : " + SuperPile.getInstance().sousSommet());
 		}
-		
+
 	private static void sommetAfficher()
 		{
-		System.out.println("Element du sommet non retir√© : " + SuperPile.getInstance().sommet());
+		System.out.println("Element du sommet non retirÈ : " + SuperPile.getInstance().sommet());
 		}
-		
+
 	private static void depilerAfficher()
 		{
-		System.out.println("Element du sommet et retir√© : " + SuperPile.getInstance().depiler());
+		System.out.println("Element du sommet et retirÈ : " + SuperPile.getInstance().depiler());
 		}
-		
+
 	private static void afficherTaille()
 		{
 		System.out.println("Taille de la pile : " + SuperPile.getInstance().getTaille());
 		}
 
-	private static void empiler(int case)
+	private static void empiler(int n)
 		{
-		for(int i = 0; i < case; i++)
+		for(int i = 0; i < n; i++)
 			{
 			SuperPile.getInstance().empiler(i);
 			}
