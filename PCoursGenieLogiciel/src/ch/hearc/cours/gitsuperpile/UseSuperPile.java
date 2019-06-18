@@ -35,6 +35,10 @@ public class UseSuperPile
 	|*							Methodes Private						*|
 	\*------------------------------------------------------------------*/
 
+	/*------------------------------*\
+	|*			  Static			*|
+	\*------------------------------*/
+
 	private static void viderPile(int n)
 		{
 		for(int i = 0; i < n; i++)
